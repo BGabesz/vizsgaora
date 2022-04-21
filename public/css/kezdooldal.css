@@ -1,0 +1,80 @@
+        @charset "utf-8";
+        html {
+            max-width: 1000px;
+            background-color: rgb(255, 250, 204);
+        }
+        
+        body {
+            text-align: center;
+            background-color: aliceblue;
+        }
+        
+        .kozepre {
+            font-size: 20px;
+        }
+        
+        article {
+            background-color: whitesmoke;
+        }
+        
+        .kep {
+            float: left;
+            margin: 5px;
+            width: 50px;
+        }
+        
+        .tablazat table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        .felvisz {
+            padding: 2px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 4px;
+        }
+        
+        .tablazat td,
+        .tablazat th {
+            text-align: left;
+            padding: 8px;
+        }
+        
+        .tablazat tr:nth-child(even) {
+            background-color: #acacac;
+        }
+        
+        .tablazat table th {
+            background-color: rgb(65, 65, 65);
+            color: whitesmoke;
+        }
+        
+        label {
+            display: inline-block;
+            width: 150px;
+            text-align: right;
+        }
+        
+        input {
+            width: 60%;
+        }
+        
+        wid .ujfelvisz {
+            float: right;
+        }
+        
+        @media screen and (max-width: 600px) {
+            tr {
+                display: grid;
+                grid-template-columns: 1fr 8fr;
+            }
+            .tablazat th {
+                display: none;
+            }
+            .szerkesztGomb,
+            .torolGomb {
+                display: none;
+            }
+        }
